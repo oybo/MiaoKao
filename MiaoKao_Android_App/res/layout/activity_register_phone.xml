@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <EditText
+        android:id="@+id/register_phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@color/color_FFFFFF"
+        android:hint="@string/register_phone_txt"
+        android:inputType="number"
+        android:paddingLeft="10dip"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/register_register_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_login_selector"
+        android:gravity="center"
+        android:text="@string/register_next_register_txt"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/bt_text_size" />
+
+</LinearLayout>

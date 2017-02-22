@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/contact_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical"
+        android:padding="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="联系人"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/perfect_info_username_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="你的姓名"
+                android:padding="5dip"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <View
+                android:layout_width="80dip"
+                android:layout_height="1dip" />
+
+            <TextView
+                android:id="@+id/perfect_info_man_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/checkbox_btn_selector"
+                android:gravity="center"
+                android:text="先生" />
+
+            <TextView
+                android:id="@+id/perfect_info_woman_cbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dip"
+                android:drawableLeft="@drawable/checkbox_btn_selector"
+                android:gravity="center"
+                android:text="女士" />
+        </LinearLayout>
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:id="@+id/contact_phone_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="手机号码"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/perfect_info_phone_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="填写手机号码"
+                    android:inputType="number"
+                    android:padding="5dip"
+                    android:singleLine="true"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/perfect_info_get_authcode_bt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_guide_selector"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View style="@style/view_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dip" >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:text="验证码"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/perfect_info_authcode_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="填写验证码"
+                    android:inputType="number"
+                    android:padding="5dip"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View style="@style/view_line_style" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dip" >
+
+            <TextView
+                android:layout_width="80dip"
+                android:layout_height="wrap_content"
+                android:text="联系地址"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/perfect_info_address_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint="填写地址"
+                android:padding="5dip"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/perfect_info_ok_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/green_bt_bg_selector"
+        android:text="@android:string/ok"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

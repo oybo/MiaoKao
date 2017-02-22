@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/my_order_detail_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <com.miaokao.android.app.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="10dip"
+            android:layout_marginTop="10dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip" >
+
+                    <ImageView
+                        android:id="@+id/item_my_order_detail_icon"
+                        android:layout_width="60dip"
+                        android:layout_height="60dip"
+                        android:layout_centerVertical="true" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/item_my_order_detail_product_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="品质版"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/item_my_order_detail_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dip"
+                            android:text="20123-232-12"
+                            android:textColor="@color/color_000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/item_my_order_detail_refund"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:background="@drawable/bt_login_selector"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="6dip"
+                        android:paddingRight="6dip"
+                        android:paddingTop="2dip"
+                        android:text="我要退款"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/item_my_order_detail_all_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:background="#F5FAFA"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="10dip"
+                    android:text="总计:asds"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/order_detail_first_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_detail_first_pay_bl_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="首批付款    10%"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_detail_first_pay_num_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="金额  888元"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/order_detail_first_pay_status_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dip"
+                                android:layout_marginTop="5dip"
+                                android:background="#039FF1"
+                                android:paddingBottom="4dip"
+                                android:paddingLeft="6dip"
+                                android:paddingRight="6dip"
+                                android:paddingTop="2dip"
+                                android:text="已支付"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="(申请报名前，需付清此款项)"
+                        android:textColor="@color/text_color"
+                        android:textSize="10sp" />
+
+                    <View
+                        style="@style/view_line_style"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_detail_second_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_detail_second_pay_bl_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="二批付款    10%"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_detail_second_pay_num_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="金额  888元"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/order_detail_second_pay_status_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dip"
+                                android:layout_marginTop="5dip"
+                                android:background="#04BE02"
+                                android:paddingBottom="4dip"
+                                android:paddingLeft="6dip"
+                                android:paddingRight="6dip"
+                                android:paddingTop="2dip"
+                                android:text="去付款"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="(科目一合格后,需付清此款项,即开始科目二培训)"
+                        android:textColor="@color/text_color"
+                        android:textSize="10sp" />
+
+                    <View
+                        style="@style/view_line_style"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_detail_third_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_detail_third_pay_bl_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="首批付款    10%"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_detail_third_pay_num_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="金额  888元"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/order_detail_third_pay_status_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dip"
+                                android:layout_marginTop="5dip"
+                                android:background="#04BE02"
+                                android:paddingBottom="4dip"
+                                android:paddingLeft="6dip"
+                                android:paddingRight="6dip"
+                                android:paddingTop="2dip"
+                                android:text="去付款"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="(修完科目二全部学时后,需付清此款项,即开始科目三培训)"
+                        android:textColor="@color/text_color"
+                        android:textSize="10sp" />
+
+                    <View
+                        style="@style/view_line_style"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_detail_fourth_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_detail_fourth_pay_bl_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="首批付款    10%"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_detail_fourth_pay_num_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="金额  888元"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/order_detail_fourth_pay_status_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dip"
+                                android:layout_marginTop="5dip"
+                                android:background="#CACACA"
+                                android:paddingBottom="4dip"
+                                android:paddingLeft="6dip"
+                                android:paddingRight="6dip"
+                                android:paddingTop="2dip"
+                                android:text="待确认"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="(科目二,科目三合格通过后,需付清此款项,即可开始科目四准备)"
+                        android:textColor="@color/text_color"
+                        android:textSize="10sp" />
+
+                    <View
+                        style="@style/view_line_style"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/order_detail_fivth_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bt_bg_selector"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:paddingTop="5dip" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/order_detail_fivth_pay_bl_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="首批付款    10%"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/order_detail_fivth_pay_num_txt"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dip"
+                            android:layout_weight="1"
+                            android:gravity="left"
+                            android:text="金额  888元"
+                            android:textColor="@color/color_000000"
+                            android:textSize="14sp" />
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="right|center_vertical"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/order_detail_fivth_pay_status_txt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="10dip"
+                                android:layout_marginTop="5dip"
+                                android:background="#CACACA"
+                                android:paddingBottom="4dip"
+                                android:paddingLeft="6dip"
+                                android:paddingRight="6dip"
+                                android:paddingTop="2dip"
+                                android:text="待确认"
+                                android:textColor="@color/color_FFFFFF"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dip"
+                        android:layout_marginTop="5dip"
+                        android:text="(科目四合格通过后,需付清此款项,即可领取驾照)"
+                        android:textColor="@color/text_color"
+                        android:textSize="10sp" />
+
+                    <View
+                        style="@style/view_line_style"
+                        android:layout_marginTop="5dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.miaokao.android.app.widget.CustomerScrollView>
+
+</LinearLayout>

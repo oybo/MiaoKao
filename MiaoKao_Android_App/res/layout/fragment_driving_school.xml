@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/d_school_common_actionbar"
+            layout="@layout/include_header_layout" />
+
+        <com.miaokao.android.app.widget.SwitchView
+            xmlns:app="http://schemas.android.com/apk/res/com.miaokao.android.app"
+            android:id="@+id/d_school_switch"
+            android:layout_width="110dip"
+            android:layout_height="28dip"
+            android:layout_centerInParent="true"
+            app:textFalse="教练"
+            app:textTrue="驾校" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/driving_school_refresh_scrollview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ptr:ptrAnimationStyle="flip" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <include
+                    android:id="@+id/view_actonbar_viewpager_head_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_actonbar_viewpager_head" />
+
+                <include
+                    android:id="@+id/view_actionbar_gridview_head_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_actionbar_gridview_head" />
+
+                <include
+                    android:id="@+id/view_actionbar_listview_head_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/view_driving_school_listview_head" />
+
+                <com.miaokao.android.app.widget.MListView
+                    android:id="@+id/driving_school_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:cacheColorHint="@android:color/transparent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="0dip"
+                    android:listSelector="@android:color/transparent" />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+        <!-- 筛选视图 -->
+
+        <LinearLayout
+            android:id="@+id/driving_school_listview_screen_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#40000000"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <include
+                android:id="@+id/driving_school_listview_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/view_driving_school_listview_head" />
+
+            <com.miaokao.android.app.widget.MListView
+                android:id="@+id/b_s_lv_tab_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/back_tansparent"
+                android:cacheColorHint="@color/back_tansparent"
+                android:divider="#E0E0E0"
+                android:dividerHeight="0.5dip"
+                android:listSelector="@color/back_tansparent"
+                android:scrollbars="none"
+                android:visibility="gone" />
+
+            <!-- 只有筛选才有的清空和确认 -->
+
+            <LinearLayout
+                android:id="@+id/d_school_more_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#E0E0E0" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dip"
+                    android:background="@color/color_FFFFFF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:paddingTop="2dip" >
+
+                    <Button
+                        android:id="@+id/d_school_more_cancel_bt"
+                        android:layout_width="120dip"
+                        android:layout_height="28dip"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bt_unsable_selector"
+                        android:text="清空"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/d_school_more_ok_bt"
+                        android:layout_width="120dip"
+                        android:layout_height="28dip"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/bt_guide_selector"
+                        android:text="完成"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <!-- 不管是筛选还是分类都需要取消按钮 -->
+
+            <LinearLayout
+                android:id="@+id/d_school_more_cancel_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dip"
+                    android:background="#E0E0E0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/exit_icon" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

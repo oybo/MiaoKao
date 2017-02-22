@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sv_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <ImageButton
+        android:id="@+id/iv_switch_cursor"
+        android:layout_width="55dip"
+        android:layout_height="25dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="0.5dip"
+        android:layout_marginRight="0.5dip"
+        android:background="@drawable/switch_bt_bg" />
+
+    <LinearLayout
+        android:layout_width="110dip"
+        android:layout_height="25dip"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/switch_text_true"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/switch_text_false"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/edit_user_info_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <EditText
+        android:id="@+id/edit_info_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="40dip"
+        android:padding="10dip"
+        android:textColor="@color/text_color"
+        android:textSize="14sp" />
+
+    <ListView
+        android:id="@+id/edit_info_school_lv"
+        android:layout_width="match_parent"
+        android:background="@color/back_tansparent"
+        android:cacheColorHint="@color/back_tansparent"
+        android:scrollbars="none"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/edit_info_sex_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/edit_info_sex_nan"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:background="@drawable/bt_bg_selector"
+            android:drawableRight="@drawable/checkbox_btn_selector"
+            android:padding="10dip"
+            android:text="男" />
+
+        <View style="@style/view_line_style" />
+
+        <TextView
+            android:id="@+id/edit_info_sex_nv"
+            android:layout_width="match_parent"
+            android:layout_height="38dip"
+            android:background="@drawable/bt_bg_selector"
+            android:drawableRight="@drawable/checkbox_btn_selector"
+            android:padding="10dip"
+            android:text="女" />
+    </LinearLayout>
+
+</LinearLayout>

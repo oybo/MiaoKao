@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/prepare_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="需准备资料"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/prepare_stu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:text="@string/prepare_one_info"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/prepare_cer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:text="@string/prepare_two_info"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/prepare_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:text="@string/prepare_three_info"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/prepare_health"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:minHeight="35dip"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="2dip"
+        android:text="@string/prepare_four_info"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="5dip"
+        android:text="详细说明"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/prepare_notice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_FFFFFF"
+            android:gravity="center_vertical"
+            android:padding="10dip"
+            android:paddingBottom="2dip"
+            android:paddingTop="2dip"
+            android:text="@string/prepare_one_explain"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/prepare_ok_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginLeft="-10dip"
+        android:layout_marginRight="-10dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_guide_selector"
+        android:text="资料准备完成, 通知学车顾问上门"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

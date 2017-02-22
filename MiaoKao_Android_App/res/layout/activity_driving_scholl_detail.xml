@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/d_school_detail_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <com.miaokao.android.app.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dip"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:padding="10dip" >
+
+                <com.miaokao.android.app.widget.RoundAngleImageView
+                    android:id="@+id/d_s_icon_iv"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="15dip"
+                    android:src="@drawable/head_image_default" />
+
+                <TextView
+                    android:id="@+id/d_s_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dip"
+                    android:layout_toRightOf="@id/d_s_icon_iv"
+                    android:text="锦辉驾校"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+
+                <com.miaokao.android.app.widget.RatingBarView
+                    xmlns:rating="http://schemas.android.com/apk/res/com.miaokao.android.app"
+                    android:id="@+id/d_s_pf_rating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="11dip"
+                    android:layout_below="@id/d_s_name_tv"
+                    android:layout_marginTop="2dip"
+                    android:layout_toRightOf="@id/d_s_icon_iv"
+                    rating:rating_size="4"
+                    rating:rating_width="11" />
+
+                <TextView
+                    android:id="@+id/d_s_type_info_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/d_s_pf_rating"
+                    android:layout_marginTop="2dip"
+                    android:layout_toRightOf="@id/d_s_icon_iv"
+                    android:text="闪退/刷卡/发票/接送/分批付款"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/d_s_detail_ybm_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0名"
+                        android:textColor="@color/color_F9BFB3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="已报名学员"
+                        android:textColor="@color/color_50FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/d_s_detail_pf_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0分"
+                        android:textColor="@color/color_F9BFB3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/d_s_detail_ypl_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="0人已点评"
+                        android:textColor="@color/color_50FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/d_s_detail_ytg_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0名"
+                        android:textColor="@color/color_F9BFB3"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dip"
+                        android:text="每月通过数量"
+                        android:textColor="@color/color_50FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_line_style" />
+
+            <LinearLayout
+                android:id="@+id/d_s_detail_address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:id="@+id/d_s_detail_address_txt"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:text="福田区梅林路东路五号"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/d_s_detail_distance_txt"
+                    android:layout_width="80dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="7.23千米"
+                    android:textColor="@color/text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/d_s_detail_look_coach_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="查看教练"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="配套服务"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <View
+                    style="@style/view_line_style"
+                    android:layout_marginTop="10dip" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="驾校设施"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_s_detail_service_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="wifi就餐"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="服务"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_s_detail_sbss_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="一条龙"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="公交路线"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_s_detail_gjlx_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="11111111111111111111111"
+                        android:textColor="#50000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:text="课程报名"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="类型"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="班别"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="价格"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="报名"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <com.miaokao.android.app.widget.MListView
+                    android:id="@+id/d_s_course_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/back_tansparent"
+                    android:cacheColorHint="@color/back_tansparent"
+                    android:listSelector="@color/back_tansparent"
+                    android:scrollbars="none" />
+
+                <View style="@style/view_line_style" />
+
+                <com.miaokao.android.app.widget.MListView
+                    android:id="@+id/d_s_discount_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/back_tansparent"
+                    android:cacheColorHint="@color/back_tansparent"
+                    android:listSelector="@color/back_tansparent"
+                    android:paddingBottom="5dip"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip"
+                    android:paddingTop="5dip"
+                    android:scrollbars="none" >
+                </com.miaokao.android.app.widget.MListView>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/d_s_detail_license_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingTop="10dip"
+                android:text="驾校营业执照"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/d_s_detail_comment_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="10dip"
+                    android:paddingTop="10dip"
+                    android:text="驾校评论"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:gravity="center_vertical"
+                    android:text="全部评论"
+                    android:textColor="@color/text_color" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="驾校简介"
+                    android:textColor="@color/color_000000"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/d_s_detail_info_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="驾驾校评论驾校驾驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论校评论驾驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论校评论驾驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论校评论评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论驾校评论校评论"
+                    android:textColor="@color/color_000000"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dip"
+                android:background="@color/back_tansparent" />
+        </LinearLayout>
+    </com.miaokao.android.app.widget.CustomerScrollView>
+
+</LinearLayout>

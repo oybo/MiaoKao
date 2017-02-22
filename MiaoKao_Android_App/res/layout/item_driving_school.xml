@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <com.miaokao.android.app.widget.RoundAngleImageView
+            android:id="@+id/item_driving_icon_iv"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:layout_margin="10dip"
+            android:src="@drawable/head_image_default" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingBottom="6dip"
+            android:paddingLeft="6dip"
+            android:paddingRight="10dip"
+            android:paddingTop="6dip" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/item_driving_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="广人驾校"
+                    android:textColor="#90000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/item_driving_price_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    android:text="$6789"
+                    android:textColor="#F8B283"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dip" >
+
+                <com.miaokao.android.app.widget.RatingBarView
+                    xmlns:rating="http://schemas.android.com/apk/res/com.miaokao.android.app"
+                    android:id="@+id/item_driving_pf_rating"
+                    android:layout_width="60dip"
+                    android:layout_height="8dip"
+                    android:layout_centerVertical="true"
+                    rating:rating_size="4"
+                    rating:rating_width="8" />
+
+                <TextView
+                    android:id="@+id/item_driving_grade_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/item_driving_pf_rating"
+                    android:singleLine="true"
+                    android:text="5.0分"
+                    android:textColor="#80000000"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/item_driving_apply_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dip"
+                    android:layout_toRightOf="@id/item_driving_grade_txt"
+                    android:singleLine="true"
+                    android:text="42人已报名"
+                    android:textColor="#80000000"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/item_driving_bao_txt"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:padding="4dip"
+                        android:src="@drawable/bao" />
+
+                    <ImageView
+                        android:id="@+id/item_driving_fen_txt"
+                        android:layout_width="20dip"
+                        android:layout_height="20dip"
+                        android:layout_marginRight="5dip"
+                        android:padding="4dip"
+                        android:src="@drawable/fen" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_driving_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dip"
+                android:singleLine="true"
+                android:textColor="#50000000"
+                android:textSize="12sp" />
+
+            <com.miaokao.android.app.widget.MListView
+                android:id="@+id/item_d_s_discount_listview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:background="@color/back_tansparent"
+                android:cacheColorHint="@color/back_tansparent"
+                android:listSelector="@color/back_tansparent"
+                android:scrollbars="none" >
+            </com.miaokao.android.app.widget.MListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/search_d_school_common_actionbar"
+            layout="@layout/include_header_layout" />
+
+        <EditText
+            android:id="@+id/search_d_s_name_et"
+            android:layout_width="match_parent"
+            android:layout_height="28dip"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="75dip"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/edittext_two_bg"
+            android:drawableLeft="@drawable/sousuo_two"
+            android:drawablePadding="2dip"
+            android:hint="请输入驾校名称"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="5dip"
+            android:singleLine="true"
+            android:textColor="@color/color_000000"
+            android:textColorHint="@color/text_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="5dip"
+        android:text="搜索结果:"
+        android:textColor="@color/color_50FFFFFF"
+        android:textSize="12sp" />
+
+    <ListView
+        android:id="@+id/search_d_s_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:cacheColorHint="@color/back_tansparent"
+        android:listSelector="@color/back_tansparent"
+        android:scrollbars="none" >
+    </ListView>
+
+</LinearLayout>

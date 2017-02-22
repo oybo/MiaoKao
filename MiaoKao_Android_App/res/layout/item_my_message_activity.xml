@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip"
+    android:paddingTop="5dip" >
+
+    <com.miaokao.android.app.widget.RoundAngleImageView
+        android:id="@+id/my_message_head_image"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:src="@drawable/head_image_default" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/my_message_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="强大驾校"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/my_message_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="20123-232-2"
+                android:textColor="@color/text_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/my_message_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dip"
+            android:singleLine="true"
+            android:text="强大强大强大强大强大强大强大强大强大强大强大强大强大强大强大强大"
+            android:textColor="@color/color_actionbar_bg"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout>

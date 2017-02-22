@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="#F1F1F1"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/b_s_lv_tab_type_layout"
+        android:layout_width="0dip"
+        android:layout_height="38dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/b_s_lv_tab_type_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dip"
+            android:drawableRight="@drawable/b_s_listview_tab_selector"
+            android:gravity="center"
+            android:paddingRight="5dip"
+            android:text="分类"
+            android:textColor="@drawable/b_s_listview_tab_txt_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/shu_line_icon" />
+
+    <LinearLayout
+        android:id="@+id/b_s_lv_tab_sort_layout"
+        android:layout_width="0dip"
+        android:layout_height="38dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/b_s_lv_tab_sort_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dip"
+            android:drawableRight="@drawable/b_s_listview_tab_selector"
+            android:gravity="center"
+            android:paddingRight="5dip"
+            android:text="排序"
+            android:textColor="@drawable/b_s_listview_tab_txt_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0.5dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="5dip"
+        android:background="@drawable/shu_line_icon" />
+
+    <LinearLayout
+        android:id="@+id/b_s_lv_tab_more_layout"
+        android:layout_width="0dip"
+        android:layout_height="38dip"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/b_s_lv_tab_more_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="2dip"
+            android:drawableRight="@drawable/b_s_listview_tab_selector"
+            android:gravity="center"
+            android:paddingRight="10dip"
+            android:text="筛选"
+            android:textColor="@drawable/b_s_listview_tab_txt_selector"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

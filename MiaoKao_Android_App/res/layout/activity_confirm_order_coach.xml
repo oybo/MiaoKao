@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/confirm_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <com.miaokao.android.app.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/confirm_order_user_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:padding="10dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/confirm_order_icon_tag"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/order_head_image_icon" />
+
+                <LinearLayout
+                    android:id="@+id/confirm_order_info_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:layout_toRightOf="@id/confirm_order_icon_tag"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/confirm_order_name_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxWidth="150dip"
+                        android:singleLine="true"
+                        android:text="zhangsan"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_sex_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:layout_marginRight="10dip"
+                        android:singleLine="true"
+                        android:text="男"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_phone_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="123123"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/confirm_order_address_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/confirm_order_info_layout"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="2dip"
+                    android:layout_toRightOf="@id/confirm_order_icon_tag"
+                    android:singleLine="true"
+                    android:text="甚至加快速度"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/confirm_order_contact_txt"
+                android:layout_width="match_parent"
+                android:layout_height="45dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:drawableLeft="@drawable/order_head_image_icon"
+                android:drawablePadding="10dip"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:text="需要完善个人资料"
+                android:textColor="@color/color_000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/confirm_select_coach_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dip"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                android:paddingLeft="10dip" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="培训学校"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/confirm_name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="广人驾校"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="培训类型"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/confirm_p_name_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="C1"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="培训班别"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/confirm_p_type_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="至尊班"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="培训费用"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/confirm_p_price_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:text="10000元"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:minHeight="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:text="备注"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/confirm_p_info_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="2dip"
+                        android:paddingLeft="20dip"
+                        android:paddingRight="10dip"
+                        android:paddingTop="2dip"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:padding="10dip" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="我是学生"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dip"
+                        android:gravity="center_vertical"
+                        android:text="报名时需要认证，非学生需要补齐差额"
+                        android:textColor="@color/color_F8A322"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/confirm_is_student_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/switch_btn_selector"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/confirm_is_online_pay_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:drawableRight="@drawable/checkbox_btn_selector"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="分批支付"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/confirm_is_offline_pay_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bt_bg_selector"
+                android:drawableRight="@drawable/checkbox_btn_selector"
+                android:gravity="center_vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="10dip"
+                android:text="全额支付"
+                android:textColor="@color/color_000000"
+                android:textSize="14sp" />
+
+            <RelativeLayout
+                android:id="@+id/confirm_is_student_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="学生优惠"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/confirm_privilege_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dip"
+                    android:text="-80元"
+                    android:textColor="@color/color_000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical"
+                android:padding="5dip" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="总计"
+                        android:textColor="@color/color_000000"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/confirm_order_all_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:text="8880元"
+                        android:textColor="@color/color_000000"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <View style="@style/view_line_style" />
+
+                <RelativeLayout
+                    android:id="@+id/confirm_first_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="5dip" >
+
+                    <TextView
+                        android:id="@+id/confirm_first_pay_bl_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="首批付款(110%)"
+                        android:textColor="@color/color_F8A322"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/confirm_first_pay_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dip"
+                        android:text="880元"
+                        android:textColor="@color/color_F8A322"
+                        android:textSize="13sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/confirm_submit_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/orange_bt_bg_selector"
+                android:text="提交订单"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </com.miaokao.android.app.widget.CustomerScrollView>
+
+</LinearLayout>

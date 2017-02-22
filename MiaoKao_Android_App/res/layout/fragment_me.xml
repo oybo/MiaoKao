@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/me_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dip"
+        android:background="@color/color_actionbar_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dip" >
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.miaokao.android.app.widget.RoundAngleImageView
+                android:id="@+id/me_icon_image"
+                android:layout_width="70dip"
+                android:layout_height="70dip"
+                android:src="@drawable/head_image_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/me_fragment_no_login_layout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="5dip"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/me_tip_login_txt"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/me_login_txt"
+                    android:layout_width="50dip"
+                    android:layout_height="28dip"
+                    android:background="@drawable/me_bt_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/me_go_login_txt"
+                    android:textColor="@drawable/me_bt_txt_selector"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/me_register_txt"
+                    android:layout_width="100dip"
+                    android:layout_height="28dip"
+                    android:background="@drawable/me_bt_bg_selector"
+                    android:gravity="center"
+                    android:text="@string/me_go_register_txt"
+                    android:textColor="@drawable/me_bt_txt_selector"
+                    android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/me_fragment_login_layout"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:paddingLeft="5dip" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/me_fragment_username_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="张三"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="12dip"
+                        android:layout_height="12dip"
+                        android:src="@drawable/mobile" />
+
+                    <TextView
+                        android:id="@+id/me_fragment_phone_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dip"
+                        android:text="1882455955"
+                        android:textColor="@color/color_FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dip"
+                android:src="@drawable/ic_list_arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/me_my_wallet_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_wallet_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="我的钱包"
+            android:textColor="@color/color_000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/me_my_wallet_tag_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/ic_list_arrow" />
+
+        <TextView
+            android:id="@+id/me_my_wallet_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:layout_toLeftOf="@id/me_my_wallet_tag_image"
+            android:textColor="#F8B283"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/color_50FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/me_my_message_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_message_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="@string/me_my_message_txt"
+            android:textColor="@color/color_000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/ic_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/color_50FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/me_my_order_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_order_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="@string/me_my_order_txt"
+            android:textColor="@color/color_000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/ic_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/color_50FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/me_feedback_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_feedback_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="意见反馈"
+            android:textColor="@color/color_000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/ic_list_arrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dip"
+        android:background="@color/color_50FFFFFF" />
+
+    <RelativeLayout
+        android:id="@+id/me_my_setting_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_bg_selector" >
+
+        <ImageView
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dip"
+            android:src="@drawable/my_set_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dip"
+            android:text="@string/me_my_setting_txt"
+            android:textColor="@color/color_000000"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:src="@drawable/ic_list_arrow" />
+    </RelativeLayout>
+
+</LinearLayout>

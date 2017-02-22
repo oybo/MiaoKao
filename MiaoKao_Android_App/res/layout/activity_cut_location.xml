@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/cut_location_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="当前城市"
+        android:textColor="@color/color_50FFFFFF"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/cut_location_city_txt"
+        android:layout_width="match_parent"
+        android:layout_height="35dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="深圳市"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="开通城市"
+        android:textColor="@color/color_50FFFFFF"
+        android:textSize="13sp" />
+
+    <GridView
+        android:id="@+id/cut_location_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:cacheColorHint="@color/back_tansparent"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@color/back_tansparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dip" />
+
+</LinearLayout>

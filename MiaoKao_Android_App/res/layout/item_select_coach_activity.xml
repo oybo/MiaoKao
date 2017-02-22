@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_bg_selector"
+        android:padding="10dip" >
+
+        <TextView
+            android:id="@+id/item_select_coach_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="asd"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_select_coach_tag_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="asd"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_line_style" />
+
+</LinearLayout>

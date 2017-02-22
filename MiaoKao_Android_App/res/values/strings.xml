@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">喵考学车</string>
+
+    <string name="start_app">开启喵考</string>
+
+    <!-- tab -->
+    <string name="main_tab_index_txt">喵考</string>
+    <string name="main_tab_jiaxiao_txt">学车</string>
+    <string name="main_tab_find_txt">发现</string>
+    <string name="main_tab_me_txt">我的</string>
+
+    <!-- 喵考 -->
+    <string name="go_driving_school_txt">去报名学车</string>
+
+    <!-- 附近驾校 -->
+    <string name="local_driving_school_grade_txt">评分最多</string>
+    <string name="local_driving_school_comment_txt">评论最多</string>
+    <string name="local_driving_school_apply_txt">报名最多</string>
+    <string name="local_driving_school_more_txt">更多筛选</string>
+
+    <!-- 我的 -->
+    <string name="me_tip_login_txt">登录即可享受专属特权</string>
+    <string name="me_go_login_txt">登录</string>
+    <string name="me_go_register_txt">新用户注册</string>
+
+    <string name="me_my_message_txt">我的消息</string>
+    <string name="me_my_order_txt">我的订单</string>
+    <string name="me_my_setting_txt">我的设置</string>
+
+    <!-- 登录页 -->
+    <string name="login_username_txt">手机号/用户名</string>
+    <string name="login_password_txt">密码</string>
+    <string name="login_forget_pwd_txt">忘记密码</string>
+    <string name="login_msg_login_txt">短信验证码登录</string>
+    <string name="login_register_txt">注册</string>
+    <string name="login_login_txt">登录</string>
+
+    <!-- 注册页 -->
+    <string name="register_phone_txt">手机号</string>
+    <string name="register_next_register_txt">下一步,获取验证码</string>
+    <string name="register_yzm_txt">验证码</string>
+    <string name="register_finish_txt">完成</string>
+    <string name="register_send_yzm_txt">验证码已发送至手机%s</string>
+    <string name="register_pwd_rule_txt">密码长度为6-20个字符</string>
+    <string name="register_get_auth_code_txt">获取验证码</string>
+    <string name="register_reset_send_txt">重新发送(%s)</string>
+
+    <!-- 网络请求错误 -->
+    <string name="net_error_timeout">亲、读取服务器数据超时拉!</string>
+    <string name="net_error_return">网络返回出错!</string>
+    <string name="net_error_service">亲、服务器不给力呦!</string>
+    <string name="net_error_set_net">亲、请检查您的网络设置!</string>
+    <string name="net_error">亲、您的网络好像不给力呦!</string>
+    
+    <!-- Dialog_tip -->
+    <string name="dialog_tips">提示</string>
+    
+    <!-- 报到 -->
+    <string name="prepare_one_info">1.身份证(非本地户口还需提供居住证复印件) 正反面复印件</string>
+    <string name="prepare_two_info">2.如是学生需提供带相片的学生证复印件</string>
+    <string name="prepare_three_info">3.提供近期白底彩色照片</string>
+    <string name="prepare_four_info">4.体检表 (可统一安排体检, 具体问学车顾问)</string>
+    
+    <string name="prepare_one_explain">&#160;&#160;&#160;&#160;1.深圳市户口者, 需身份证复印件一份, 1寸免冠近期白底彩照12张 (不能穿制服和颜色过浅的衣服)</string>
+    
+    <!-- 科目一 -->
+    <string name="course_one_info_txt">恭喜您已经开始准备科目一的考试，请积极准备考试，驾校会提供备考书籍或在线题库网址，如没有获得相关信息请和驾校联系。如科目一完成，请点击\'确认完成\'，进行科目二预约。</string>
+    <string name="course_four_info_txt">恭喜您已经开始准备科目四的考试，请积极准备考试，驾校会提供备考书籍或在线题库网址，如没有获得相关信息请和驾校联系。如科目四完成，请点击\'确认完成\'。</string>
+    
+    
+</resources>

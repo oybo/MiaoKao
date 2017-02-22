@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="photo_camera_true">#90000000</color>
+    <color name="photo_camera_false">#50000000</color>
+
+    <color name="photo_submit_true">#489DD4</color>
+    <color name="photo_submit_false">#57A2E8</color>
+    
+</resources>

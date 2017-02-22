@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/back_tansparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="@drawable/bg_about_text"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pop_choose_comment_xh_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/bt_bg_selector"
+            android:gravity="center"
+            android:text="喜欢"
+            android:textColor="#F64A45"
+            android:textSize="14sp" />
+
+        <View style="@style/view_line_style" />
+
+        <LinearLayout
+            android:id="@+id/pop_choose_comment_zp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/pop_choose_comment_zp_txt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:background="@drawable/bt_bg_selector"
+                android:gravity="center"
+                android:text="喜欢"
+                android:textColor="#2B82D8"
+                android:textSize="14sp" />
+
+            <View style="@style/view_line_style" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/pop_choose_comment_bxh_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/bt_bg_selector"
+            android:gravity="center"
+            android:text="不喜欢"
+            android:textColor="#2B82D8"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bg_about_text"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pop_choose_comment_cancel_txt"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="@drawable/bt_bg_selector"
+            android:gravity="center"
+            android:text="@android:string/cancel"
+            android:textColor="#2B82D8"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

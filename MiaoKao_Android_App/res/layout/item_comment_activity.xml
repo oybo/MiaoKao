@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bt_bg_selector"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="20dip"
+        android:paddingTop="5dip" >
+
+        <com.miaokao.android.app.widget.RoundAngleImageView
+            android:id="@+id/item_comment_image"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/head_image_default" />
+
+        <TextView
+            android:id="@+id/item_comment_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="138212323"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_comment_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:gravity="right"
+            android:text="20123-23-23"
+            android:textColor="@color/color_000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        style="@style/view_line_style"
+        android:layout_marginLeft="20dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:paddingTop="10dip" >
+
+        <TextView
+            android:id="@+id/item_comment_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="好评"
+            android:textColor="@color/text_color"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_comment_info_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="5dip"
+            android:layout_toLeftOf="@id/item_comment_type"
+            android:text="你哈怂电视卡但是"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View style="@style/view_line_style" />
+
+</LinearLayout>

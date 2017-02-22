@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="back_tansparent">#00000000</color>
+    <color name="color_000000">#000000</color>
+    <color name="color_FFFFFF">#FFFFFF</color>
+    <color name="color_50FFFFFF">#50000000</color>
+    <color name="color_actionbar_bg">#1879D9</color>
+    <color name="color_F8A322">#F8A322</color>
+    <color name="color_E15024">#E15024</color>
+    <color name="color_C1393C">#C1393C</color>
+    <color name="color_70DA65">#70DA65</color>
+    <color name="color_12C27A">#12C27A</color>
+    <color name="color_E54D3D">#E54D3D</color>
+    <color name="color_D91818">#D91818</color>
+    <color name="text_color">#99000000</color>
+    <color name="color_80FFFFFF">#80000000</color>
+    <color name="color_F9BFB3">#F9BFB3</color>
+    <color name="color_F44440">#F44440</color>
+    <color name="color_A1A1A1">#A1A1A1</color>
+    <color name="color_EECA0D">#EECA0D</color>
+    <color name="color_7ECDF4">#7ECDF4</color>
+    <color name="color_main_bg">#E2E2E2</color>
+    <color name="main_tab_txt_select">#039FF1</color>
+    <color name="main_tab_txt_normal">#50000000</color>
+
+    <!--  橘红色 -->
+    <color name="color_E86F57">#E86F57</color>
+
+    <!--  支付状态颜色 -->
+    <color name="order_pay_039FF1">#039FF1</color>
+    <color name="order_pay_04BE02">#04BE02</color>
+    <color name="order_pay_CACACA">#CACACA</color>
+
+    <!--  预约课时选择颜色 -->
+    <color name="make_99111111">#99111111</color>
+    <color name="make_F4D216">#F4D216</color>
+    
+</resources>

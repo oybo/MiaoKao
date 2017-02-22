@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/make_study_car_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <com.miaokao.android.app.widget.CustomerScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dip" >
+
+                <com.miaokao.android.app.widget.MListView
+                    android:id="@+id/make_study_car_week_lv"
+                    android:layout_width="60dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="90dip"
+                    android:background="@color/back_tansparent"
+                    android:cacheColorHint="@color/back_tansparent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:listSelector="@color/back_tansparent"
+                    android:scrollbars="none" />
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:paddingLeft="10dip"
+                    android:scrollbars="none" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="90dip"
+                            android:orientation="vertical" >
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="75dip"
+                                android:gravity="center" >
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="上午"
+                                    android:textColor="@color/color_000000"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="中午"
+                                    android:textColor="@color/color_000000"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:text="下午"
+                                    android:textColor="@color/color_000000"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <com.miaokao.android.app.widget.MGirdView
+                                android:id="@+id/make_study_car_hour_gv"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@color/back_tansparent"
+                                android:cacheColorHint="@color/back_tansparent"
+                                android:listSelector="@color/back_tansparent" />
+                        </LinearLayout>
+
+                        <com.miaokao.android.app.widget.MGirdView
+                            android:id="@+id/make_study_car_week_gv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/back_tansparent"
+                            android:cacheColorHint="@color/back_tansparent"
+                            android:listSelector="@color/back_tansparent" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dip"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/color_FFFFFF" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="可用"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/make_99111111" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="不可用"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dip"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <View
+                        android:layout_width="30dip"
+                        android:layout_height="30dip"
+                        android:background="@color/make_F4D216" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dip"
+                        android:text="我的预定"
+                        android:textColor="@color/color_000000"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.miaokao.android.app.widget.CustomerScrollView>
+
+</LinearLayout>

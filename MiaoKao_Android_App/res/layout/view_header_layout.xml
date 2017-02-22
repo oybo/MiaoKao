@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_actionbar_bg"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_top_height" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height" >
+
+        <LinearLayout
+            android:id="@+id/header_left_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minWidth="45dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/header_bar_left_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="5dip"
+                android:text="深圳"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/header_bar_left_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/actionbar_left_back_selector" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/header_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="标题"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/header_right_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:minWidth="50dip" >
+
+            <TextView
+                android:id="@+id/header_bar_right_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dip"
+                android:layout_marginTop="2dip"
+                android:paddingRight="5dip"
+                android:textColor="@drawable/actionbar_right_txt_selector"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/header_bar_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/actionbar_colors_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/colors_line" />
+
+</LinearLayout>

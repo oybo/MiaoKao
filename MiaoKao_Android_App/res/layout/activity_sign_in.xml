@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/sign_in_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <LinearLayout
+        android:id="@+id/sign_in_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="16dip"
+            android:layout_height="16dip"
+            android:background="@drawable/round_bg"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:text="点击预约课程签到"
+            android:textColor="@color/text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <com.miaokao.android.app.widget.MGirdView
+        android:id="@+id/sign_in_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@color/back_tansparent"
+        android:cacheColorHint="@color/back_tansparent"
+        android:horizontalSpacing="10dip"
+        android:listSelector="@color/back_tansparent"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="10dip" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--  星际评分 -->
+    <attr name="rating_size" format="integer" />  
+    <attr name="rating_width" format="integer" />  
+  
+    <declare-styleable name="RatingBarView">  
+        <attr name="rating_size" />
+        <attr name="rating_width" />
+    </declare-styleable>  
+    
+    <!--  圆角图 -->
+    <declare-styleable name="RoundAngleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    
+    <!--  自定义switch开关 -->
+    <declare-styleable name="SwitchView">
+         <attr name="textTrue" format="string" />
+         <attr name="textFalse" format="string" />
+         <attr name="container_Hight" format="dimension" />
+         <attr name="container_Width" format="dimension" />
+         <attr name="cursor_Hight" format="dimension" />
+         <attr name="cursor_Width" format="dimension" />
+          <attr name="cursor_Background" format="reference|color" />
+         <attr name="container_Background" format="reference|color" />
+    </declare-styleable>
+</resources>

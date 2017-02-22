@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dip"
+    android:layout_height="260dip"
+    android:background="@android:color/transparent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/big"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/sharebg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="360dip"
+            android:layout_height="100dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/wxpyqbtn"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo_wechat" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/wxpyqbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dip"
+                    android:text="微信"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/xlwbbtn"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/sinashare" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/xlwbbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dip"
+                    android:text="新浪微博"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/txwbbtn"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo_tencentweibo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txwbbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dip"
+                    android:text="腾讯微博"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/secend"
+            android:layout_width="match_parent"
+            android:layout_height="100dip" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/qqkjbtn"
+                    android:layout_width="50dip"
+                    android:layout_height="50dip"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/logo_qzone" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/qqkjbtn"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dip"
+                    android:text="QQ空间"
+                    android:textColor="#000000" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialogbtn"
+        android:layout_width="match_parent"
+        android:layout_height="18dip"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/big"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/sharefalse" >
+    </Button>
+
+</RelativeLayout>

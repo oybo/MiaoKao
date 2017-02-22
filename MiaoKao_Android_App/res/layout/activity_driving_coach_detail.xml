@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/d_coach_detail_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <com.miaokao.android.app.widget.ObservableScrollView
+        android:id="@+id/d_coach_detail_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="210dip" >
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/d_c_detail_select_viewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <LinearLayout
+                    android:id="@+id/coach_viewpager_page_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dip"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/coach_viewpager_page_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/page_selector" />
+
+                    <ImageView
+                        android:id="@+id/coach_viewpager_page_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:src="@drawable/page_selector" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dip"
+                android:layout_margin="10dip"
+                android:background="@color/color_FFFFFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="100dip"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dip" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="综合评分"
+                        android:textColor="@color/color_000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/coach_detail_grade_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:text="0.0分"
+                        android:textColor="@color/color_000000"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0.5dip"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dip"
+                    android:background="@color/color_50FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dip" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/coach_detail_hp_layout"
+                            android:layout_width="0dip"
+                            android:layout_height="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/comment_haoping_bg"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/coach_detail_hp_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#E63E32" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/coach_detail_h_grade_txt"
+                            android:layout_width="60dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:text="好评  (0)"
+                            android:textColor="#E63E32"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/coach_detail_zp_layout"
+                            android:layout_width="0dip"
+                            android:layout_height="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/comment_zhongping_bg"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/coach_detail_zp_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#EB8122" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/coach_detail_z_grade_txt"
+                            android:layout_width="60dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:text="中评  (0)"
+                            android:textColor="#EB8122"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/coach_detail_cp_layout"
+                            android:layout_width="0dip"
+                            android:layout_height="5dip"
+                            android:layout_weight="1"
+                            android:background="@drawable/comment_chaping_bg"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/coach_detail_cp_txt"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="#F3C464" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/coach_detail_c_grade_txt"
+                            android:layout_width="60dip"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:text="差评  (0)"
+                            android:textColor="#F3C464"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="授课类型"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_coach_detail_sclx_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="授课地点"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_coach_detail_skdd_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="课程/费用"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_coach_detail_kcfy_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="科目二:"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_coach_detail_kme_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <View style="@style/view_line_style" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dip"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="80dip"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="10dip"
+                        android:text="科目三:"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+
+                    <View
+                        android:layout_width="0.2dip"
+                        android:layout_height="match_parent"
+                        android:background="@color/color_50FFFFFF" />
+
+                    <TextView
+                        android:id="@+id/d_coach_detail_mks_txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="20dip"
+                        android:textColor="@color/text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="学员评价"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0.2dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_50FFFFFF" />
+
+                <TextView
+                    android:id="@+id/d_coach_detail_xyqj_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:paddingLeft="20dip"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dip"
+                android:layout_margin="10dip"
+                android:background="@color/color_FFFFFF"
+                android:orientation="horizontal"
+                android:paddingRight="10dip" >
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dip"
+                    android:text="教练认证"
+                    android:textColor="@color/text_color"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="0.2dip"
+                    android:layout_height="match_parent"
+                    android:background="@color/color_50FFFFFF" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical|right"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:src="@drawable/ic_list_checked_diable" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="身份证"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:src="@drawable/ic_list_checked_diable" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="教练证"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:gravity="center"
+                        android:orientation="horizontal" >
+
+                        <ImageView
+                            android:layout_width="18dip"
+                            android:layout_height="18dip"
+                            android:src="@drawable/ic_list_checked_diable" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="驾驶证"
+                            android:textColor="@color/text_color"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/d_c_detail_select_bt"
+                android:layout_width="match_parent"
+                android:layout_height="40dip"
+                android:layout_marginBottom="20dip"
+                android:layout_marginTop="20dip"
+                android:background="@drawable/bt_login_selector"
+                android:gravity="center"
+                android:text="选择此教练"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="@dimen/bt_text_size" />
+        </LinearLayout>
+    </com.miaokao.android.app.widget.ObservableScrollView>
+
+</LinearLayout>

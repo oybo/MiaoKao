@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/select_coach_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <ListView
+        android:id="@+id/select_coach_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:background="@color/back_tansparent"
+        android:cacheColorHint="@color/back_tansparent"
+        android:listSelector="@color/back_tansparent" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/apply_refund_affirm_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <TextView
+        android:id="@+id/apply_refund_info_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:text="aaa"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/apply_refund_name_txt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/color_FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="aaa"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/apply_refund_phone_txt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/bt_bg_selector"
+        android:drawableRight="@drawable/ic_list_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="aaa"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+</LinearLayout>

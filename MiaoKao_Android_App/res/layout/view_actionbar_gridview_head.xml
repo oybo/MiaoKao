@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <com.miaokao.android.app.widget.MGirdView
+        android:id="@+id/view_d_school_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/back_tansparent"
+        android:cacheColorHint="@color/back_tansparent"
+        android:horizontalSpacing="5dip"
+        android:listSelector="@color/back_tansparent"
+        android:numColumns="4"
+        android:verticalSpacing="10dip"
+        android:visibility="gone" />
+
+</LinearLayout>

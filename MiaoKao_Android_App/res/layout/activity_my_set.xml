@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/my_set_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="5dip"
+        android:text="账户设置"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="用户名"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_set_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="1882323"
+            android:textColor="@color/color_actionbar_bg"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/view_line_style"
+        android:layout_marginLeft="10dip" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector"
+        android:clickable="true"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="手机"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/my_set_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dip"
+            android:text="1882323"
+            android:textColor="@color/color_actionbar_bg"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingTop="5dip"
+        android:text="安全设置"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/my_set_update_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/bt_bg_selector"
+        android:drawableRight="@drawable/ic_list_arrow"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dip"
+        android:text="修改密码"
+        android:textColor="@color/color_000000"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/my_set_logout_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/orange_bt_bg_selector"
+        android:text="退出登录"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="14sp" />
+
+</LinearLayout>

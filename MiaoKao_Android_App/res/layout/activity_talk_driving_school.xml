@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_main_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/talk_d_s_common_actionbar"
+        layout="@layout/include_header_layout" />
+
+    <EditText
+        android:id="@+id/talk_d_s_content_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFFFFF"
+        android:gravity="top|left"
+        android:maxLines="7"
+        android:minLines="7"
+        android:padding="10dip"
+        android:textColor="@color/color_000000"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/talk_d_s_ok_bt"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_marginTop="20dip"
+        android:background="@drawable/bt_guide_selector"
+        android:text="@android:string/ok"
+        android:textColor="@color/color_FFFFFF"
+        android:layout_marginLeft="-10dip"
+        android:layout_marginRight="-10dip"
+        android:textSize="16sp" />
+
+</LinearLayout>

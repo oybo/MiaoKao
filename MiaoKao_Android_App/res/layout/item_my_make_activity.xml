@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bt_blue_bg_selector"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/item_my_make_date_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="5dip"
+            android:text="2014-02-23"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_my_make_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="9:00-20:00"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_my_make_exercise_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:text="曲线行驶"
+            android:textColor="@color/color_000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_my_make_coach_name_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dip"
+            android:background="#50000000"
+            android:gravity="center"
+            android:paddingBottom="1dip"
+            android:paddingTop="1dip"
+            android:text="小飞"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>
